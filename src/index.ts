@@ -1,5 +1,5 @@
-import { users, products, purchases } from './database';
+import { users, products, purchases, queryProductsByName, createPurchase, getAllPurchasesFromUserId } from './database';
+import { createUser, getAllUsers, createProduct, getAllProducts, getProductById } from './database';
+import { ProductCategories } from './types';
 
-console.table(users)
-console.table(products)
-console.table(purchases)
+console.log(getAllPurchasesFromUserId("01"))
