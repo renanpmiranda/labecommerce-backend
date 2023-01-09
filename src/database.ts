@@ -2,12 +2,12 @@ import { TUser, TProduct, TPurchase, ProductCategories } from './types';
 
 export const users: TUser[] = [
     {
-        id:"00",
+        id:"01",
         email:"fulano@gmail.com",
         password:"bananinha"    
     },
     {
-        id:"01",
+        id:"02",
         email:"beltrano@gmail.com",
         password:"moranguinho"
     }
@@ -31,13 +31,13 @@ export function getAllUsers() : TUser[] {
 
 export const products: TProduct[] = [
     {
-        id:"00",
+        id:"01",
         name:"Produto 01",
         price:10,
         category:ProductCategories.ACCESSORIES
     },
     {
-        id:"01",
+        id:"02",
         name:"Produto 02",
         price:20,
         category:ProductCategories.CLOTHES_AND_SHOES
@@ -73,14 +73,14 @@ export function queryProductsByName(q: string) : TProduct[] | undefined {
 
 export const purchases: TPurchase[] = [
     {
-        userId: "00",
-        productId: "00",
+        userId: "02",
+        productId: "01",
         quantity: 2,
         totalPrice: 20
     },
     {
         userId: "01",
-        productId: "01",
+        productId: "02",
         quantity: 1,
         totalPrice: 20
     }
